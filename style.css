@@ -1,0 +1,56 @@
+/* SETUP */
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+#page{
+    background-color: rgb(87, 87, 87);
+    color:white;
+    width:300px;
+    height:500px;
+    position:absolute;
+    left:30%;
+    padding:10px;
+}
+/* HEADINGS */
+.heading{
+    letter-spacing: 2px;
+    text-align: center;
+}
+.subheading{
+    letter-spacing: 2px;
+    text-align: center;
+}
+/* FORMS & INPUTS */
+input{
+    margin-bottom: 5px;
+}
+input[type = text], 
+input[type = password]{
+    border-radius: 5px;
+    border:none;
+}
+/* BUTTONS */
+#submit{
+    float:right;
+    background-color: rgb(255, 71, 71);
+    border:none;
+    border-radius: 5px;
+    width:75px;
+    height:25px;
+    color:white;
+}
+#submit:hover{
+    background-color: rgb(216, 63, 63);
+    cursor: pointer;
+}
+/* MODAL WINDOWS, ALERTS AND  WARRINGS*/
+#alert{
+    padding: 5px;
+    border:3px solid #ff5549;
+    background-color: #ff6f64;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
