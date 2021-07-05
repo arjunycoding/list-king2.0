@@ -32,7 +32,7 @@ input[type = password]{
     border:none;
 }
 /* BUTTONS */
-#submit{
+.button{
     float:right;
     background-color: rgb(255, 71, 71);
     border:none;
@@ -41,9 +41,13 @@ input[type = password]{
     height:25px;
     color:white;
 }
-#submit:hover{
+.button:hover{
     background-color: rgb(216, 63, 63);
     cursor: pointer;
+}
+#addItemRequest,
+#addItemToList{
+    width:100px;
 }
 /* MODAL WINDOWS, ALERTS AND  WARRINGS*/
 #alert{
@@ -53,4 +57,16 @@ input[type = password]{
     color: white;
     margin-bottom: 15px;
     border-radius: 10px;
+}
+/* LISTS */
+.item{
+    background-color: #ff4d4d;
+    padding:5px;
+    margin-bottom:1px;
+    list-style-type: none;
+    font-weight: bold;
+    text-shadow: 2px 1px #b93939;
+}
+ul{
+    padding: 0px;
 }

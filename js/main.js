@@ -1,3 +1,6 @@
+/***************** 
+       LOGIN
+*****************/
 // VARIBELS
 let submit = $("#submit");
 let warrning = $("#alert");
@@ -22,3 +25,35 @@ function validateForm(){
 }
 // EVENT LISTENERS
 submit.on("click", validateForm)
+
+/***************** 
+    MAIN PAGE
+*****************/
+// VARIBELS
+let addItemRequest = $("#addItemRequest");
+let addItemList = $("#addItemToList");
+let itemTitle = $("#itemTitle");
+// HIDE AND SHOW
+addItemList.hide();
+itemTitle.hide(); 
+// FUNCTIONS
+function displayItemRequest(){
+    addItemRequest.hide();
+    addItemList.show();
+    itemTitle.show();
+}
+function addItemToList(){
+    let itemTitleVal = itemTitle.val();
+    let listContent = $("#list")
+    addItemRequest.hide();
+    addItemList.show();
+    itemTitle.show();
+    listContent.append(`<li class="item">${itemTitleVal}</li>`)
+    addItemRequest.show();
+    addItemList.hide();
+    itemTitle.hide();
+    itemTitle.val("")
+}
+// EVENT LISTENERS
+addItemRequest.on("click", displayItemRequest)
+addItemList.on("click", addItemToList)
