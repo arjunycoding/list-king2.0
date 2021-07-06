@@ -37,6 +37,9 @@ let itemTitle = $("#itemTitle");
 addItemList.hide();
 itemTitle.hide(); 
 // FUNCTIONS
+function addClassToItem(item, className){
+    $(`${item}`).addClass(className)
+}
 function displayItemRequest(){
     addItemRequest.hide();
     addItemList.show();
@@ -57,3 +60,20 @@ function addItemToList(){
 // EVENT LISTENERS
 addItemRequest.on("click", displayItemRequest)
 addItemList.on("click", addItemToList)
+// $("li").on("click", "li", function(){
+//     $(this).addClass("compleate")
+// })
+$("ul").on('click','li', function() {
+    if($(this).hasClass("compleat") == true){
+        console.log("has class")
+        $(this).animate({
+            paddingLeft: "+=200",
+            opacity: "0.0"
+        });
+        setTimeout(function(){
+                $(this).remove()
+        }, 5000);
+    } else {
+        $(this).addClass("compleat")  
+    }
+})

@@ -22,6 +22,12 @@ body{
     letter-spacing: 2px;
     text-align: center;
 }
+/* CAPTIONS */
+.caption{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 12px;
+}
 /* FORMS & INPUTS */
 input{
     margin-bottom: 5px;
@@ -66,6 +72,14 @@ input[type = password]{
     list-style-type: none;
     font-weight: bold;
     text-shadow: 2px 1px #b93939;
+}
+.compleat{
+    background-color: #292929;
+    padding:5px;
+    margin-bottom:1px;
+    list-style-type: none;
+    font-weight: bold;
+    text-shadow: 2px 1px #4d4d4d;
 }
 ul{
     padding: 0px;
